@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--nunito-font);
-  color: var(--text-body-color);
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .header a:hover {

@@ -1,6 +1,9 @@
 html {
-  /* transform base of 16px in 10px */
-  /* is more easy to work with em, rem, etc. */
+  /* set the default font-family for all
+  texts */
+  font-family: var(--nunito-font);
+  /* transform base of 16px in 10px
+  is more easy to work with em, rem, etc. */
   font-size: 62.5%;
 }
 
@@ -16,7 +19,10 @@ ul {
 body {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2.4rem;
   background-color: var(--dark-color);
+  /* set the default color for the application */
+  color: var(--text-body-color);
 }
 
 img {
@@ -28,7 +34,8 @@ ul {
   list-style-type: none;
 }
 
-/* debug styles | delete after tests */
+
+/* TODO: debug styles | delete after tests */
 section {
   height: 500px;
 }
