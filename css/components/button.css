@@ -1,0 +1,17 @@
+.button {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  border: solid .1rem var(--light-color);
+  border-radius: .5rem;
+  height: 4.8rem;
+  min-width: 15.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-body-color);
+}
+
+.button:hover {
+  border-width: .2rem;
+}

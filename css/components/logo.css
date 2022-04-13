@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 4rem;
+}
+
+.logo span {
+  font-family: var(--montserrat-font);
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-left: .8rem;
+}

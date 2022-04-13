@@ -1,0 +1,7 @@
+:root {
+  --primary-color: #5454D4;
+  --light-color: #FFFFFF;
+  --dark-color: #19191B;
+  --text-color-title: var(--light-color);
+  --text-body-color: rgba(255, 255, 255, .7);
+}

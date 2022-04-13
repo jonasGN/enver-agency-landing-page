@@ -1,0 +1,34 @@
+html {
+  /* transform base of 16px in 10px */
+  /* is more easy to work with em, rem, etc. */
+  font-size: 62.5%;
+}
+
+body,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--dark-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* debug styles | delete after tests */
+section {
+  height: 500px;
+}

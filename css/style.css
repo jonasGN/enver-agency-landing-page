@@ -1,7 +1,12 @@
-body,
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
+/* global styles */
+@import url("./globals.css");
+@import url("./fonts.css");
+
+/* config */
+@import url("./config/fonts.css");
+@import url("./config/colors.css");
+
+/* components */
+@import url("./components/header.css");
+@import url("./components/logo.css");
+@import url("./components/button.css");
