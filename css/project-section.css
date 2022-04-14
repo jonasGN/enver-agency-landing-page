@@ -1,0 +1,24 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  align-items: flex-end;
+}
+
+.project h2 {
+  font-family: Graphik;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: var(--light-color);
+}
+
+.project p {
+  font-size: 2.1rem;
+}
+
+.project video {
+  grid-column: 1 / -1;
+  border-radius: .5rem;
+  margin-top: 5rem;
+}

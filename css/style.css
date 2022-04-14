@@ -10,4 +10,11 @@
 @import url("./components/header.css");
 @import url("./components/logo.css");
 @import url("./components/button.css");
+@import url("./components/button-highlight.css");
+@import url("./components/service-item.css");
 @import url("./components/footer.css");
+
+/* sections */
+@import url("./intro-section.css");
+@import url("./project-section.css");
+@import url("./services-section.css");

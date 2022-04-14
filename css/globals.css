@@ -11,21 +11,24 @@ body,
 h1,
 h2,
 h3,
+p,
 ul {
   margin: 0;
   padding: 0;
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1248px;
   margin: 0 auto;
   padding: 0 2.4rem;
+  box-sizing: border-box;
   background-color: var(--dark-color);
   /* set the default color for the application */
   color: var(--text-body-color);
 }
 
-img {
+img,
+video {
   display: block;
   width: 100%;
 }
@@ -34,8 +37,6 @@ ul {
   list-style-type: none;
 }
 
-
-/* TODO: debug styles | delete after tests */
 section {
-  height: 500px;
+  padding: 7.5rem 0;
 }

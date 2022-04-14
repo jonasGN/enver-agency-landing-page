@@ -1,7 +1,15 @@
 :root {
+  /* primary colors */
   --primary-color: #5454D4;
   --light-color: #FFFFFF;
   --dark-color: #19191B;
   --text-color-title: var(--light-color);
   --text-body-color: rgba(255, 255, 255, .7);
+
+  /* support colors */
+  --primary-background-color: rgba(84, 84, 212, .1);
+  --red-color: #F04037;
+  --red-background-color: rgba(240, 64, 55, .1);
+  --yellow-color: #FEDC5A;
+  --yellow-background-color: rgba(254, 220, 90, .1);
 }
