@@ -1,0 +1,5 @@
+.portfolio-item {
+  background-color: var(--dark-light-color);
+  padding: 2.4rem;
+  border-radius: 1.4rem;
+}

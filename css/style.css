@@ -12,9 +12,12 @@
 @import url("./components/button.css");
 @import url("./components/button-highlight.css");
 @import url("./components/service-item.css");
+@import url("./components/portfolio-item.css");
 @import url("./components/footer.css");
 
 /* sections */
 @import url("./intro-section.css");
 @import url("./project-section.css");
 @import url("./services-section.css");
+@import url("./portfolio-section.css");
+@import url("./contact-section.css");

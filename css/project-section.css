@@ -6,7 +6,7 @@
 }
 
 .project h2 {
-  font-family: Graphik;
+  font-family: var(--graphik-font);
   font-size: 6rem;
   font-weight: 700;
   line-height: 7rem;

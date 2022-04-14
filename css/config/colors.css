@@ -6,6 +6,9 @@
   --text-color-title: var(--light-color);
   --text-body-color: rgba(255, 255, 255, .7);
 
+  /* complementary colors */
+  --dark-light-color: #1E1E20;
+
   /* support colors */
   --primary-background-color: rgba(84, 84, 212, .1);
   --red-color: #F04037;

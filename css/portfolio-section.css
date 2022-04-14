@@ -1,0 +1,12 @@
+.portfolio h2 {
+  font-family: var(--graphik-font);
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.portfolio-scroll {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 7rem;
+}
