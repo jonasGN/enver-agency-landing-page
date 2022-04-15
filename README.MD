@@ -72,3 +72,4 @@ Contudo. Ao finalizar a implmentação de todo o conceito, essa seção será de
 - [ ] Animar itens do portifólio com uma animação vertical suave em loop e sutilmente diferente para cada item da lista.
 - [ ] Adicionar mais itens ao portfólio e animar o scroll. Tanto seu indicador, quanto a suavização do scroll da lista.
 - [ ] Melhorar compressão de images.
+- [ ] Adicionar imagens de preview do site no topo deste documento.

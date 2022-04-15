@@ -9,4 +9,38 @@
   display: flex;
   gap: 2.4rem;
   margin-top: 7rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+/* TODO: set this dinamically and not fixed like this */
+.portfolio-scroll .portfolio-item:nth-child(2) {
+  margin-top: 5rem;
+}
+
+.portfolio-scroll .portfolio-item:nth-child(3) {
+  margin-top: 10rem;
+}
+
+.portfolio-scroll::before,
+.portfolio-scroll::after {
+  content: '';
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portfolio-scroll::before {
+  background-image: url("../assets/images/wave-detail.svg");
+  width: 10rem;
+  height: 3rem;
+  left: -5rem;
+  bottom: -3rem;
+}
+
+.portfolio-scroll::after {
+  background-image: url("../assets/images/buble-detail.svg");
+  width: 6rem;
+  height: 6rem;
+  top: calc(-6rem + -3rem);
+  right: 4rem;
 }

@@ -3,7 +3,7 @@ html {
   texts */
   font-family: var(--nunito-font);
   /* transform base of 16px in 10px
-  is more easy to work with em, rem, etc. */
+  is more easy to work with em, rem, etc in base 10. */
   font-size: 62.5%;
 }
 
@@ -38,6 +38,7 @@ section {
   padding-bottom: 7.5rem;
 }
 
+/* normalize site structure */
 .container {
   max-width: 1248px;
   margin: 0 auto;

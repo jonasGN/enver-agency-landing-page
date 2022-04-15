@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2.4rem;
+  gap: 4.8rem;
 }
 
-.intro h1 {
+.intro-content h1 {
   font-family: var(--graphik-font);
   font-weight: 700;
   font-size: 8.4rem;
@@ -13,8 +13,35 @@
   margin-bottom: 2.4rem;
 }
 
-.intro p {
+.intro-content p {
   font-size: 2.1rem;
   line-height: 3.9rem;
   margin-bottom: 5rem;
+}
+
+.intro-img {
+  position: relative;
+}
+
+.intro-img::after,
+.intro-img::before {
+  content: '';
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.intro-img::after {
+  background-image: url("../assets/images/wave-detail.svg");
+  width: 10rem;
+  height: 3.2rem;
+  top: 10rem;
+  left: 0;
+}
+
+.intro-img::before {
+  background-image: url("../assets/images/buble-detail.svg");
+  width: 6rem;
+  height: 6rem;
+  right: 0;
+  top: 4rem;
 }
