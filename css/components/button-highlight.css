@@ -5,7 +5,7 @@
   font-size: 2rem;
   font-weight: 700;
   box-sizing: border-box;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   height: 5.8rem;
   min-width: 20rem;
   padding: 0 2.6rem;
@@ -16,11 +16,11 @@
 }
 
 .button-highlight-icon::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
-  margin-left: .8rem;
+  margin-left: 0.8rem;
   background-image: url("../../assets/icons/arrow-right-up.svg");
   transition: transform 0.3s;
 }
@@ -31,5 +31,5 @@
 }
 
 .button-highlight-icon:hover::after {
-  transform: translateX(.3rem);
+  transform: translateX(0.3rem);
 }

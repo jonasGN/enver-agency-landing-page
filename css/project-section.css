@@ -19,6 +19,6 @@
 
 .project video {
   grid-column: 1 / -1;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-top: 5rem;
 }

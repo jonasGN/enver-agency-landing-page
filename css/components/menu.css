@@ -15,6 +15,13 @@
   display: flex;
 }
 
+.menu-nav ul {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .menu-nav ul a {
   display: block;
   font-size: 1.8rem;
@@ -23,9 +30,6 @@
   color: inherit;
 }
 
-.menu-nav ul {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.menu-nav ul a.active {
+  color: var(--primary-color);
 }

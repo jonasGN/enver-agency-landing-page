@@ -25,7 +25,7 @@
 
 .contact::before,
 .contact::after {
-  content: '';
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
 }

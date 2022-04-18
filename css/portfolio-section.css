@@ -24,7 +24,7 @@
 
 .portfolio-scroll::before,
 .portfolio-scroll::after {
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   position: absolute;
 }

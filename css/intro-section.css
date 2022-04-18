@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.intro-img>span {
+.intro-img > span {
   position: absolute;
   top: 0;
   right: 0;
@@ -39,9 +39,9 @@
 
 .intro-img::before,
 .intro-img::after,
-.intro-img>span::before,
-.intro-img>span::after {
-  content: '';
+.intro-img > span::before,
+.intro-img > span::after {
+  content: "";
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -62,7 +62,7 @@
   top: 4rem;
 }
 
-.intro-img>span::before {
+.intro-img > span::before {
   background-image: url("../assets/images/play-detail.svg");
   width: 10.6rem;
   height: 12rem;
@@ -70,7 +70,7 @@
   left: -4rem;
 }
 
-.intro-img>span::after {
+.intro-img > span::after {
   background-image: url("../assets/images/plus-detail.svg");
   width: 5rem;
   height: 5rem;
