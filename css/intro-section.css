@@ -5,6 +5,12 @@
   gap: 4.8rem;
 }
 
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .intro-content h1 {
   font-family: var(--graphik-font);
   font-weight: 700;
@@ -23,14 +29,24 @@
   position: relative;
 }
 
+.intro-img>span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.intro-img::before,
 .intro-img::after,
-.intro-img::before {
+.intro-img>span::before,
+.intro-img>span::after {
   content: '';
   background-repeat: no-repeat;
   position: absolute;
 }
 
-.intro-img::after {
+.intro-img::before {
   background-image: url("../assets/images/wave-detail.svg");
   width: 10rem;
   height: 3.2rem;
@@ -38,10 +54,26 @@
   left: 0;
 }
 
-.intro-img::before {
+.intro-img::after {
   background-image: url("../assets/images/buble-detail.svg");
   width: 6rem;
   height: 6rem;
   right: 0;
   top: 4rem;
+}
+
+.intro-img>span::before {
+  background-image: url("../assets/images/play-detail.svg");
+  width: 10.6rem;
+  height: 12rem;
+  bottom: -4rem;
+  left: -4rem;
+}
+
+.intro-img>span::after {
+  background-image: url("../assets/images/plus-detail.svg");
+  width: 5rem;
+  height: 5rem;
+  bottom: 0;
+  right: 0;
 }
