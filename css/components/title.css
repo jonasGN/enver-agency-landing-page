@@ -1,0 +1,19 @@
+.title {
+  font-family: var(--graphik-font);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--light-color);
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3.6rem;
+  }
+}

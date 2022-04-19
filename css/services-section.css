@@ -1,16 +1,10 @@
 .services {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
 .services h2 {
-  font-family: var(--graphik-font);
-  font-size: 6rem;
-  font-weight: 700;
-  line-height: 7rem;
-  color: var(--light-color);
   text-align: center;
 }
 
@@ -30,26 +24,76 @@
   background-repeat: no-repeat;
   width: 5rem;
   height: 5rem;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .services::before {
-  background-image: url("../assets/images/play-detail.svg");
+  background-image: url("../assets/images/details/play-detail-large.svg");
   width: 10.6rem;
   height: 12.1rem;
   top: calc(7.5rem - 3rem);
   left: 6rem;
+  animation-name: pressing-anim;
 }
 
-.service-items-grid::before {
-  background-image: url("../assets/images/plus-detail.svg");
-  right: 0;
-  top: calc(-5rem * 2);
+.service-items-grid::before,
+.service-items-grid::after {
+  background-image: url("../assets/images/details/plus-detail-large.svg");
+  animation-name: rotate-anim;
   transform: rotate(30deg);
 }
 
+.service-items-grid::before {
+  right: 0;
+  top: calc(-5rem * 2);
+}
+
 .service-items-grid::after {
-  background-image: url("../assets/images/plus-detail.svg");
   bottom: -5rem;
-  left: -3rem;
-  transform: rotate(25deg);
+  left: 0;
+}
+
+@media (max-width: 1100px) {
+  .services::before {
+    left: 3rem;
+    width: 6.6rem;
+    height: 7.6rem;
+    background-image: url("../assets/images/details/play-detail-small.svg");
+  }
+}
+
+@media (max-width: 900px) {
+  .service-items-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+  .services::before {
+    top: -1rem;
+  }
+  .service-items-grid::before,
+  .service-items-grid::after {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url("../assets/images/details/plus-detail-small.svg");
+  }
+}
+
+@media (max-width: 700px) {
+  .services h2 {
+    text-align: initial;
+  }
+  .services::before {
+    left: 1rem;
+  }
+  .service-items-grid::before {
+    top: -4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .service-items-grid {
+    grid-template-columns: 1fr;
+  }
 }

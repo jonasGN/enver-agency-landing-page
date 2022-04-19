@@ -10,7 +10,7 @@
   border-radius: 50%;
 }
 
-.service-item-img {
+.service-item-img img {
   width: 3.2rem;
 }
 
@@ -46,7 +46,18 @@
 }
 
 .service-item p {
-  font-size: 2rem;
   max-width: 30ch;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .service-item h3 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-item h3 {
+    font-size: 2.4rem;
+  }
 }

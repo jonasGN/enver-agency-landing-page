@@ -11,16 +11,10 @@
   display: flex;
   gap: 2.4rem;
   justify-content: space-between;
-  padding: 18rem 0;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
   align-items: center;
   position: relative;
-}
-
-.contact h2 {
-  font-family: var(--graphik-font);
-  font-size: 6rem;
-  font-weight: 700;
-  color: var(--light-color);
 }
 
 .contact::before,
@@ -28,20 +22,61 @@
   content: "";
   position: absolute;
   background-repeat: no-repeat;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .contact::before {
-  background-image: url("../assets/images/buble-detail.svg");
+  background-image: url("../assets/images/details/buble-detail-large.svg");
   width: 6rem;
   height: 6rem;
   bottom: 6rem;
   left: 3rem;
+  animation-name: bounce-anim;
 }
 
 .contact::after {
-  background-image: url("../assets/images/plus-detail.svg");
+  background-image: url("../assets/images/details/plus-detail-large.svg");
   width: 5rem;
   height: 5rem;
   top: 6rem;
   right: 0;
+  animation-name: rotate-anim;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact::before {
+    width: 3.6rem;
+    height: 4.2rem;
+    background-image: url("../assets/images/details/buble-detail-small.svg");
+  }
+
+  .contact::after {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url("../assets/images/details/plus-detail-small.svg");
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .contact::before {
+    bottom: 2rem;
+    left: 2.4rem;
+  }
+  .contact::after {
+    top: 2rem;
+  }
 }

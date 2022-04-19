@@ -52,11 +52,11 @@ Contudo. Ao finalizar a implmentação de todo o conceito, essa seção será de
 
 - [ ] Internacionalizar a apliacação para pt-BR e en-US.
 
-- [ ] Animar os detalhes do site fazendo com que os mesmos se movam em loop de forma suave.
+- [x] Animar os detalhes do site fazendo com que os mesmos se movam em loop de forma suave.
 
 - [x] Animar botões que possuem ícones em estado de hover.
 
-- [ ] Animar itens do portifólio com uma animação vertical suave em loop e sutilmente diferente para cada item da lista.
+- [x] Animar itens do portifólio com uma animação vertical suave em loop e sutilmente diferente para cada item da lista.
 
 - [ ] Adicionar mais itens ao portfólio e animar o scroll. Tanto seu indicador, quanto a suavização do scroll da lista.
 

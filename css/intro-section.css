@@ -20,8 +20,6 @@
 }
 
 .intro-content p {
-  font-size: 2.1rem;
-  line-height: 3.9rem;
   margin-bottom: 5rem;
 }
 
@@ -29,7 +27,7 @@
   position: relative;
 }
 
-.intro-img > span {
+.intro-detail {
   position: absolute;
   top: 0;
   right: 0;
@@ -39,41 +37,148 @@
 
 .intro-img::before,
 .intro-img::after,
-.intro-img > span::before,
-.intro-img > span::after {
+.intro-detail::before,
+.intro-detail::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .intro-img::before {
-  background-image: url("../assets/images/wave-detail.svg");
+  background-image: url("../assets/images/details/wave-detail-large.svg");
   width: 10rem;
   height: 3.2rem;
   top: 10rem;
   left: 0;
+  animation-name: strech-anim;
 }
 
 .intro-img::after {
-  background-image: url("../assets/images/buble-detail.svg");
+  background-image: url("../assets/images/details/buble-detail-large.svg");
   width: 6rem;
   height: 6rem;
   right: 0;
   top: 4rem;
+  animation-name: bounce-anim;
 }
 
-.intro-img > span::before {
-  background-image: url("../assets/images/play-detail.svg");
+.intro-detail::before {
+  background-image: url("../assets/images/details/play-detail-large.svg");
   width: 10.6rem;
   height: 12rem;
   bottom: -4rem;
   left: -4rem;
+  animation-name: pressing-anim;
 }
 
-.intro-img > span::after {
-  background-image: url("../assets/images/plus-detail.svg");
+.intro-detail::after {
+  background-image: url("../assets/images/details/plus-detail-large.svg");
   width: 5rem;
   height: 5rem;
   bottom: 0;
   right: 0;
+  animation-name: rotate-anim;
+}
+
+@media (max-width: 1100px) {
+  .intro {
+    align-items: flex-start;
+  }
+  .intro-content h1 {
+    font-size: 6.4rem;
+  }
+  .intro-img::before {
+    width: 6.4rem;
+    height: 2rem;
+    background-image: url("../assets/images/details/wave-detail-small.svg");
+  }
+  .intro-img::after {
+    width: 3.6rem;
+    height: 4.2rem;
+    right: 5rem;
+    background-image: url("../assets/images/details/buble-detail-small.svg");
+  }
+  .intro-detail::before {
+    width: 6.6rem;
+    height: 7.6rem;
+    left: 0;
+    bottom: 0;
+    background-image: url("../assets/images/details/play-detail-small.svg");
+  }
+  .intro-detail::after {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("../assets/images/details/plus-detail-medium.svg");
+  }
+}
+
+@media (max-width: 750px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro-img::before {
+    width: 10rem;
+    height: 3.2rem;
+    left: 3rem;
+    background-image: url("../assets/images/details/wave-detail-large.svg");
+  }
+  .intro-img::after {
+    width: 6rem;
+    height: 6rem;
+    background-image: url("../assets/images/details/buble-detail-large.svg");
+  }
+  .intro-detail::before {
+    width: 10.6rem;
+    height: 12rem;
+    background-image: url("../assets/images/details/play-detail-large.svg");
+  }
+  .intro-detail::after {
+    width: 5rem;
+    height: 5rem;
+    bottom: 4rem;
+    right: 4rem;
+    background-image: url("../assets/images/details/plus-detail-large.svg");
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    gap: 5rem;
+    padding-top: 2.6rem;
+  }
+  .intro-content h1 {
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+  }
+  .intro-img::before {
+    width: 6.4rem;
+    height: 2rem;
+    background-image: url("../assets/images/details/wave-detail-small.svg");
+  }
+  .intro-img::after {
+    width: 3.6rem;
+    height: 4.2rem;
+    right: 3rem;
+    background-image: url("../assets/images/details/buble-detail-small.svg");
+  }
+  .intro-detail::before {
+    width: 6.6rem;
+    height: 7.6rem;
+    background-image: url("../assets/images/details/play-detail-small.svg");
+  }
+  .intro-detail::after {
+    width: 4rem;
+    height: 4rem;
+    right: 3rem;
+    background-image: url("../assets/images/details/plus-detail-medium.svg");
+  }
+}
+
+@media (max-width: 450px) {
+  .intro-img::before {
+    left: 0;
+  }
 }

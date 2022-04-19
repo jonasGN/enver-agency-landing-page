@@ -1,8 +1,5 @@
-.portfolio h2 {
-  font-family: var(--graphik-font);
-  font-size: 6rem;
-  font-weight: 700;
-  color: var(--light-color);
+.portfolio {
+  position: relative;
 }
 
 .portfolio-slider {
@@ -11,13 +8,17 @@
   margin-top: 7rem;
   position: relative;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .portfolio-slider::before,
-.portfolio-slider::after {
+.portfolio::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .portfolio-slider::before {
@@ -26,12 +27,30 @@
   height: 3rem;
   left: -5rem;
   bottom: -3rem;
+  animation-name: strech-anim;
 }
 
-.portfolio-slider::after {
+.portfolio::after {
   background-image: url("../assets/images/buble-detail.svg");
   width: 6rem;
   height: 6rem;
-  top: calc(-6rem + -3rem);
+  top: calc(7.5rem + 3rem);
   right: 4rem;
+  animation-name: bounce-anim;
+}
+
+@media (max-width: 1000px) {
+  .portfolio-slider::after {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-slider {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .portfolio-slider::after {
+    right: 0;
+  }
 }

@@ -4,6 +4,8 @@
   align-items: center;
   padding-top: 5rem;
   padding-bottom: 10rem;
+  /* TODO: remover after test */
+  flex-wrap: wrap;
 }
 
 .footer-nav {

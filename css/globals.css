@@ -1,3 +1,8 @@
+/* normalize how te components will be sizing */
+* {
+  box-sizing: border-box;
+}
+
 html {
   /* set the default font-family for all
   texts */
@@ -40,9 +45,30 @@ section {
 
 /* normalize site structure */
 .container {
+  /* max-widht = 1200px for content and 48px for side padding */
   max-width: 1248px;
   margin: 0 auto;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  box-sizing: border-box;
+}
+
+p {
+  font-size: 2.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1.6rem;
+  }
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }

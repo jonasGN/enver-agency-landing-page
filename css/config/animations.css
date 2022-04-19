@@ -1,0 +1,48 @@
+/* rotate animation */
+@keyframes rotate-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* bounce animation */
+@keyframes bounce-anim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+/* wave animation */
+@keyframes strech-anim {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.9, 1);
+  }
+  100% {
+    transform: scale(1.2, 1);
+  }
+}
+
+/* pressing animation. This is simulate a button being pressed */
+@keyframes pressing-anim {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
