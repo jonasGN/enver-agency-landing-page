@@ -5,7 +5,7 @@
   color: var(--light-color);
 }
 
-.portfolio-scroll {
+.portfolio-slider {
   display: flex;
   gap: 2.4rem;
   margin-top: 7rem;
@@ -13,23 +13,14 @@
   align-items: flex-start;
 }
 
-/* TODO: set this dinamically and not fixed like this */
-.portfolio-scroll .portfolio-item:nth-child(2) {
-  margin-top: 5rem;
-}
-
-.portfolio-scroll .portfolio-item:nth-child(3) {
-  margin-top: 10rem;
-}
-
-.portfolio-scroll::before,
-.portfolio-scroll::after {
+.portfolio-slider::before,
+.portfolio-slider::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
 }
 
-.portfolio-scroll::before {
+.portfolio-slider::before {
   background-image: url("../assets/images/wave-detail.svg");
   width: 10rem;
   height: 3rem;
@@ -37,7 +28,7 @@
   bottom: -3rem;
 }
 
-.portfolio-scroll::after {
+.portfolio-slider::after {
   background-image: url("../assets/images/buble-detail.svg");
   width: 6rem;
   height: 6rem;

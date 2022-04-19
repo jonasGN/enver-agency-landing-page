@@ -1,5 +1,23 @@
-.portfolio-item {
+.portfolio-item a {
+  display: block;
   background-color: var(--dark-light-color);
   padding: 2.4rem;
   border-radius: 1.4rem;
+  cursor: pointer;
+  animation: forever 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-item a:hover {
+  background: linear-gradient(var(--primary-color), var(--primary-dark-color));
+}
+
+@keyframes forever {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
 }

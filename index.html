@@ -10,6 +10,9 @@
     <meta name="description" content="Uma simples landing page retratando uma agência de publicidade.">
 
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- prevents visual bugs when user does not have js activate -->
+    <script>document.querySelector("html").classList.add("js")</script>
 </head>
 
 <body>
@@ -85,11 +88,17 @@
         </section>
         <section class="portfolio container">
             <h2>Nosso incrivél portfólio</h2>
-            <div class="portfolio-scroll">
-                <div class="portfolio-item"><img src="./assets/images/portfolio/movies-app-project@2.png" alt=""></div>
-                <div class="portfolio-item"><img src="./assets/images/portfolio/panto-project@2.png" alt=""></div>
-                <div class="portfolio-item"><img src="./assets/images/portfolio/digi-teck-project@2.png" alt=""></div>
-            </div>
+            <ul class="portfolio-slider">
+                <li class="portfolio-item">
+                    <a href="#"><img src="./assets/images/portfolio/movies-app-project@2.png"></a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="#"><img src="./assets/images/portfolio/panto-project@2.png"></a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="#"><img src="./assets/images/portfolio/digi-teck-project@2.png"></a>
+                </li>
+            </ul>
         </section>
         <section class="contact-container">
             <div class="contact container">
