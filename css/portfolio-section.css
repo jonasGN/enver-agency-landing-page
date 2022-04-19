@@ -22,16 +22,15 @@
 }
 
 .portfolio-slider::before {
-  background-image: url("../assets/images/wave-detail.svg");
+  background-image: url("../assets/images/details/wave-detail-large.svg");
   width: 10rem;
   height: 3rem;
-  left: -5rem;
   bottom: -3rem;
   animation-name: strech-anim;
 }
 
 .portfolio::after {
-  background-image: url("../assets/images/buble-detail.svg");
+  background-image: url("../assets/images/details/buble-detail-large.svg");
   width: 6rem;
   height: 6rem;
   top: calc(7.5rem + 3rem);
@@ -39,9 +38,16 @@
   animation-name: bounce-anim;
 }
 
-@media (max-width: 1000px) {
-  .portfolio-slider::after {
-    right: 0;
+@media (max-width: 900px) {
+  .portfolio-slider::before {
+    background-image: url("../assets/images/details/wave-detail-small.svg");
+    width: 6.4rem;
+    height: 2rem;
+  }
+  .portfolio::after {
+    width: 3.6rem;
+    height: 4.2rem;
+    background-image: url("../assets/images/details/buble-detail-small.svg");
   }
 }
 

@@ -60,7 +60,7 @@ Contudo. Ao finalizar a implmentação de todo o conceito, essa seção será de
 
 - [ ] Adicionar mais itens ao portfólio e animar o scroll. Tanto seu indicador, quanto a suavização do scroll da lista.
 
-- [ ] Melhorar compressão de images.
+- [x] Melhorar compressão de images.
 
 - [ ] Adicionar imagens de preview do site no topo deste documento.
 
